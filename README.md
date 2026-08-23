@@ -5,7 +5,7 @@ A responsive fashion e-commerce website built with React.js, JavaScript, Bootstr
 
 ## 🚀 Live Demo
 
-[View Live Website]
+[View Live Website]   https://ecommerce-fasco.netlify.app
 
 ## 📌 About The Project
 
