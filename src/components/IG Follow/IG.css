@@ -1,0 +1,31 @@
+.socials{
+    background-color:  #e6e5e5;
+}
+.media{
+    margin-top: 50px;
+    padding: 10px;
+}
+.Ig-photos{
+display:flex;
+width: 355px;
+height:260px;
+margin-bottom: 50px;
+}
+.Ig-photos img{
+border-radius: 2px;
+}
+.Ig-photos img:hover{
+    transform: scale(1.05);
+    transition: all 0.3s ease;
+    cursor: pointer;
+}
+.high-pic{
+margin-top: 20px;
+}
+@media(max-width:991px){
+    .Ig-photos{
+        align-items: center;
+        justify-content: center;
+        width: 745px;
+    }
+}

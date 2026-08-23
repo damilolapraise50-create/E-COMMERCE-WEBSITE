@@ -1,0 +1,50 @@
+.custom-btn {
+  background-color: #e6e5e5; 
+  color: #656464;               
+  padding: 10px 20px;
+  border:none;
+  border-radius: 5px;
+  font-size: 14px;
+  font-weight: 500;
+  transition: all 0.3s ease;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+.custom-btn:hover {
+  background-color: #000; 
+  color: #fff;            
+}
+.arrive-button {
+    gap: 15px;
+    color: #000;
+}
+.arrivals-images img:hover{
+    transform: scale(1.05);
+    transition: all 0.3s ease;
+    cursor: pointer;
+}
+.view-click{
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  width:200px;
+  color:white;
+  background-color:black;
+}
+@media(max-width:768px){
+.arrive-button{
+gap:10px;
+color:black;
+}
+}
+@media (max-width: 576px) {
+.arrive-button {
+gap: 10px;
+padding: 0 10px;
+}
+.arrive-button > div {
+flex: 0 0 calc(50% - 5px);
+}
+.custom-btn {
+width: 100%;
+padding: 9px 5px;
+font-size: 12px;
+}
+}
