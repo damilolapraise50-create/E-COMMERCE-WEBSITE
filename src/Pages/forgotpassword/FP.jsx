@@ -1,5 +1,5 @@
 import "./FP.css";
-import signinImage1 from "../../assets/Images/signinImage1.png";
+import signinImage1 from "../../assets/Images/signinimage1.png";
 import { Link } from "react-router";
 function ForgotPassword() {
   return (
