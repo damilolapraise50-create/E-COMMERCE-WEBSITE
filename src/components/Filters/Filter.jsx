@@ -37,7 +37,6 @@ function Filter() {
             collection: "New arrivals",
             tags: ["Fashion", "Hats"]
         },
-
         {
             id: 2,
             name: "Linen-blend Shirt",
@@ -50,7 +49,6 @@ function Filter() {
             tags: ["Fashion", "Shirts"]
             
         },
-
         {
             id: 3,
             name: "Long Sleeve Coat",
@@ -62,7 +60,6 @@ function Filter() {
             collection: "New arrivals",
             tags: ["Fashion"]
         },
-
         {
             id: 4,
             name: "Boxy Denim Hat",
@@ -74,7 +71,6 @@ function Filter() {
             collection: "Accessories",
             tags: ["Hats", "Denim"]
         },
-
         {
             id: 5,
             name: "Linen Plain Top",
@@ -98,7 +94,6 @@ function Filter() {
             collection: "New arrivals",
             tags: ["Fashion", "Shirts"]
         },
-
         {
             id: 7,
             name: "Polarised Sunglasses",
@@ -110,7 +105,6 @@ function Filter() {
             collection: "Accessories",
             tags: ["Sunglasses"]
         },
-
         {
             id: 8,
             name: "Rockstar Jacket",
@@ -122,7 +116,6 @@ function Filter() {
             collection: "Best sellers",
             tags: ["Fashion"]
         },
-
         {
             id: 9,
             name: "Dotted Black Dress",
@@ -142,24 +135,14 @@ function Filter() {
     // -----------------------------
 
     const [selectedSize, setSelectedSize] = useState("");
-
     const [selectedColor, setSelectedColor] = useState("");
-
     const [selectedPrice, setSelectedPrice] = useState("");
-
     const [selectedBrand, setSelectedBrand] = useState("");
-
     const [selectedCollection, setSelectedCollection] = useState("");
-
     const [selectedTag, setSelectedTag] = useState("");
 
-
-    // -----------------------------
     // FILTER PRODUCTS
-    // -----------------------------
-
     const filteredProducts = products.filter((product) => {
-
         // SIZE
         if (
             selectedSize &&
@@ -209,10 +192,8 @@ function Filter() {
         }
         return true;
     });
-    // -----------------------------
+   
     // CLEAR FILTERS
-    // -----------------------------
-
     const clearFilters = () => {
         setSelectedSize("");
         setSelectedColor("");
@@ -224,12 +205,8 @@ function Filter() {
     return (
 <div>
         <div className="shop-page d-flex">
-
-
-            {/* ================================= */}
-            {/* FILTER SIDEBAR */}
-            {/* ================================= */}
-
+{/* FILTER SIDEBAR */}
+       
             <aside className="filters">
                 <div className="d-flex justify-content-between align-items-center">
                     <h5>Filters</h5>
@@ -237,7 +214,6 @@ function Filter() {
                 </div>
 
                 {/* SIZE */}
-
                 <div className="filter-section">
                     <h6>Size</h6>
                     <div className="size-options">
@@ -263,7 +239,6 @@ function Filter() {
                         ))}
                     </div>
                 </div>
-
                 {/* COLORS */}
                 <div className="filter-section">
                     <h6>Colors</h6>
@@ -338,8 +313,7 @@ function Filter() {
                         <h6>Brands</h6>          
                     </div>
 
-                    <div className="brand-list"><div>
-                        
+                    <div className="brand-list"><div>                       
                     </div>
                         {[
                             "Minimalist",
@@ -512,8 +486,8 @@ function Filter() {
                     </button>
              </div>
             </main>
-        
         </div>
+
         <div className="container-fluid product-section">
           <div className="row align-items-stretch">
         
@@ -578,7 +552,6 @@ function Filter() {
                                 <a href="#">Contract</a>
                                 <a href="#">Careers</a>
                                 <a href="#">Blog</a>
-                                <a href="#">FAQ,s</a>
                             </div>
                         </div>
         

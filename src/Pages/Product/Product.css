@@ -232,8 +232,8 @@
     margin-bottom: 8px;
 }
 .payment img{
-    height:80px;
-    width:450px;
+    height:50px;
+    width:250px;
 }
 
 /* SHOPPING CART SIDE PANEL */
@@ -404,7 +404,7 @@
     
 }
 /*MOBILE */
-@media (max-width: 500px) {
+@media (max-width: 768px) {
 
     .cart-sidebar {
         width: 90%;

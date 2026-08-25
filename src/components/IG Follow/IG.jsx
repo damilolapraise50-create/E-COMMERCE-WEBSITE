@@ -19,25 +19,25 @@ return (
        </div> 
 
        <div className="Ig-photos">
-         <div className="col-lg-6 high-pic">
+         <div className=" high-pic">
               <img src={IG1}alt=""className="img-fluid "/>
             </div>
-             <div className="col-lg-6">
+             <div className="">
                   <img src={IG2}alt=""className="img-fluid "/>
                 </div>
-                 <div className="col-lg-6 high-pic ">
+                 <div className=" high-pic ">
                       <img src={IG3}alt=""className="img-fluid "/>
                     </div>
-                     <div className="col-lg-6 ">
+                     <div className=" ">
                           <img src={IG5}alt=""className="img-fluid "/>
                         </div>
-                         <div className="col-lg-6 high-pic">
+                         <div className=" high-pic">
                               <img src={IG4}alt=""className="img-fluid "/>
                             </div>
-                             <div className="col-lg-6">
+                             <div className="">
                                   <img src={model4}alt=""className="img-fluid "/>
                                 </div>
-                                 <div className="col-lg-6 high-pic">
+                                 <div className=" high-pic">
                                       <img src={IG6}alt=""className="img-fluid "/>
                                     </div>
        </div>

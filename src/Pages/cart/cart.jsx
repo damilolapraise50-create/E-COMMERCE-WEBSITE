@@ -224,7 +224,6 @@ const goToCheckout = () => {
                                             <a href="#">Contract</a>
                                             <a href="#">Careers</a>
                                             <a href="#">Blog</a>
-                                            <a href="#">FAQ,s</a>
                                         </div>
                                     </div>
                     

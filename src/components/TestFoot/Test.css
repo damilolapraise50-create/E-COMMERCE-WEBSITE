@@ -258,5 +258,115 @@
         font-size: xx-small;
         margin-left: 0px;
     }
+}
+@media (max-width: 576px) {
+    .social {
+        width: 100%;
+        max-width: 100%;
+        overflow-x: hidden;
+    }
+    .medio {
+        width: 100%;
+        padding: 0 20px;
+        box-sizing: border-box;
+    }
+    .medio h3 {
+        font-size: 20px;
+    }
+    .follow {
+        font-size: 12px;
+    }
+    .testimonial-slider {
+        position: relative;
+        width: 100%;
+        max-width: 100%;
+        height: 200px;
+        margin: 35px auto 0;
+        overflow: hidden;
+    }
+    .testimonial-card {
+        width: 85%;
+        max-width: 85%;
+        height: auto;
+        max-height: 180px;
+        object-fit: contain;
+    }
+    /* Current/center testimonial */
+    .testimonial-card.center {
+        transform: translateX(0) scale(1);
+        opacity: 1;
+        z-index: 3;
+    }
+    /* Previous testimonial */
+    .testimonial-card.left {
+        transform: translateX(-100%) scale(0.7);
+        opacity: 0;
+        z-index: 1;
+    }
+    /* Next testimonial */
+    .testimonial-card.right {
+        transform: translateX(100%) scale(0.7);
+        opacity: 0;
+        z-index: 1;
+    }
+    .testimonial-card.hidden {
+        transform: translateX(0) scale(0.5);
+        opacity: 0;
+        z-index: 0;
+    }
+    .testimonial-arrows {
+        margin-top: 10px;
+        gap: 10px;
+    }
+    .testimonial-arrow {
+        width: 32px;
+        height: 32px;
+        font-size: 16px;
+    }
+}
 
+/* TABLET */
+@media (max-width: 991px) {
+    .social {
+        width: 100%;
+        max-width: 100%;
+        overflow-x: hidden;
+    }
+    .testimonial-slider {
+        width: 100%;
+        max-width: 100%;
+        height: 250px;
+        margin: 40px auto 0;
+        overflow: hidden;
+    }
+    .testimonial-card {
+        width: 70%;
+        max-width: 600px;
+        height: auto;
+        max-height: 230px;
+        object-fit: contain;
+    }
+    .testimonial-card.center {
+        transform: translateX(0) scale(1);
+        opacity: 1;
+        z-index: 3;
+    }
+    .testimonial-card.left {
+        transform: translateX(-55%) scale(0.75);
+        opacity: 0.7;
+        z-index: 1;
+    }
+    .testimonial-card.right {
+        transform: translateX(55%) scale(0.75);
+        opacity: 0.7;
+        z-index: 1;
+    }
+    .testimonial-card.hidden {
+        transform: translateX(0) scale(0.5);
+        opacity: 0;
+        z-index: 0;
+    }
+    .testimonial-arrows {
+        margin-top: 15px;
+    }
 }

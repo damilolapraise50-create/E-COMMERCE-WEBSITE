@@ -24,13 +24,10 @@ function Product () {
 
     // Controls which image is displayed as the big image
     const [selectedImage, setSelectedImage] = useState(0);
-
-
     // Quantity selected by customer
     const [quantity, setQuantity] = useState(1);
     // Controls the shopping cart side panel
 const [cartOpen, setCartOpen] = useState(false);
-
 // Controls the gift wrapping checkbox
 const [giftWrap, setGiftWrap] = useState(false);
 
@@ -43,11 +40,8 @@ const [giftWrap, setGiftWrap] = useState(false);
 
     // Countdown timer
     useEffect(() => {
-
         const timer = setInterval(() => {
-
             setTime((prev) => {
-
                 let { hours, minutes, seconds } = prev;
                 if (seconds > 0) {
                     seconds--;
@@ -74,8 +68,6 @@ const [giftWrap, setGiftWrap] = useState(false);
 
         return () => clearInterval(timer);
     }, []);
-
-
   const navigate = useNavigate();
   const handleLogout = () => {
     // Remove the user's login information
@@ -85,11 +77,10 @@ const [giftWrap, setGiftWrap] = useState(false);
   };
 
 const productPrice = 39.00;
-
 const giftWrapPrice = giftWrap ? 10.00 : 0;
-
 const subtotal = (productPrice * quantity) + giftWrapPrice;
-  return (
+ 
+return (
     <div className="top-head">
       <nav className="navbar navbar-expand-lg bg-white py-3">
         <div className="container">
@@ -174,7 +165,6 @@ const subtotal = (productPrice * quantity) + giftWrapPrice;
                 </div>
 
                 {/*PRODUCT DETAILS*/}
-
                 <div className="col-lg-6 product-details">
                     <small className="brand">FASCO</small>
                     <h2>Denim Jacket</ h2>
@@ -204,9 +194,7 @@ const subtotal = (productPrice * quantity) + giftWrapPrice;
                         </strong>
                     </div>
 
-
                     {/*STOCK*/}
-
                     <div className="stock-section">
                         <p> Only <strong>9</strong> item(s) left in stock!</p>
 
@@ -228,7 +216,6 @@ const subtotal = (productPrice * quantity) + giftWrapPrice;
                     </div>
 
                     {/*COLOR*/}
-
                     <div className="color-section">
                         <p><strong>Color:</strong> Blue</p>
                         <div className="colors">
@@ -239,29 +226,9 @@ const subtotal = (productPrice * quantity) + giftWrapPrice;
                     </div>
 
                     {/*QUANTITY + CART*/}
-
                     <div className="cart-section">
                         <div>
-                            <p>Quantity</p>
-                            <div className="quantity">
-                                <button
-                                    onClick={() =>
-                                        setQuantity(
-                                            Math.max(1, quantity - 1)
-                                        )
-                                    }
-                                >
-                                    −
-                                </button>
-                                <span>{quantity}</span>
-                                <button
-                                    onClick={() =>
-                                        setQuantity(quantity + 1)
-                                    }
-                                >
-                                    +
-                                </button>
-                            </div>
+                            <p>Quantity</p>                           
                         </div>
                         <button className="add-cart"onClick={() => setCartOpen(true)}>Add to cart</button>
                     </div>
@@ -275,7 +242,6 @@ const subtotal = (productPrice * quantity) + giftWrapPrice;
                         </div>
                         <hr />
                         <p> 🚚 <strong>Estimated Delivery:</strong> Jul 30 - Aug 03</p>
-
                         <p>🚚 <strong>Free Shipping & Returns:</strong>On all orders over $75</p>
                         <div className="payment">
                             <img src={pay}alt="payment Options" />
@@ -286,11 +252,10 @@ const subtotal = (productPrice * quantity) + giftWrapPrice;
         </div>
 
 
-        {/* ================= SIDE CART ================= */}
+        {/*SIDE CART*/}
 {cartOpen && (
     <div className="cart-overlay"onClick={() => setCartOpen(false)}></div>
 )}
-
 <div className={`cart-sidebar ${cartOpen ? "cart-open" : ""}`}>
     {/* CART HEADER */}
     <div className="cart-header">
@@ -303,7 +268,6 @@ const subtotal = (productPrice * quantity) + giftWrapPrice;
     </div>
     {/* CART PRODUCT */}
     <div className="cart-product">
-
         <img src={images[selectedImage]} alt="Denim Jacket"/>
         <div className="cart-product-details">
             <h5>Denim Jacket</h5>
@@ -316,7 +280,6 @@ const subtotal = (productPrice * quantity) + giftWrapPrice;
                 <span>{quantity}</span>
                 <button onClick={() => setQuantity(quantity + 1)}>+</button>
             </div>
-
         </div>
     </div>
     <hr />
@@ -329,8 +292,6 @@ const subtotal = (productPrice * quantity) + giftWrapPrice;
         </label>
     </div>
     <hr />
-
-    
 
     {/* SUBTOTAL */}
     <div className="cart-subtotal">
@@ -356,7 +317,6 @@ const subtotal = (productPrice * quantity) + giftWrapPrice;
  View Cart
 </button>
 </div>
-
 </div>
 
     )

@@ -54,62 +54,83 @@ a{
     text-decoration:none;
 }
 .social-btn {
-    border: 1px solid #3007b8;
-    background: #fff;
-    color: #000;
+    width: 100%;
+    height: 55px;
     display: flex;
     align-items: center;
     justify-content: center;
-    gap: 8px;
-    padding: 10px 15px;
+    gap: 15px;
+    background: white;
+    border: 1px solid #8c5cff;
+    border-radius: 5px;
+    font-size: 15px;
 }
-.social-btn:hover {
-    background: #f8f9fa;
-    color: #000;
-    border-color: #bbb;
+.social-btn img {
+    width: 20px;
+    height: 20px;
+    object-fit: contain;
 }
-.social-btn img{
-    width:20px;
-    height:20px
+
+.social-btn span {
+    white-space: nowrap;
 }
-@media(max-width: 375px){
-.social-login{
- display: flex;
- justify-content: center;
-  
-}
-.head-logo{
-    text-align: center;
-}
-.login-content{
-    text-align: center;
-}
-}
-@media (max-width: 768px) {
-  .social-login {
-    flex-direction: column;
-    align-items: center;
-  }
-  .social-btn {
+@media (max-width: 576px) {
+.login-page {
     width: 100%;
-    max-width: 320px;
-  }
-  .login-image{
-    display: none;
-  }
+    min-height: 100vh;
+    padding: 0 !important;
+    margin: 0 !important;
 }
-@media (max-width: 991px) {
-    .login-image-section {
-        display: none;
+.login-image-section {
+        display: none !important;
     }
-    .login-form-section {
-        width: 100%;
-    }
-    .login-card {
-        width: 100%;
-        max-width: 500px;
-    }
-    .login-content {
-        width: 100%;
-    }
+.login-card {
+    width: 100% !important;
+    min-height: 100vh;
+    margin: 0 !important;
+    padding: 0 !important;
+    border-radius: 0 !important;
+    box-shadow: none !important;
+}
+.login-content {
+    width: 100% !important;
+    max-width: 400px;
+    margin: 0 auto;
+    padding: 80px 30px 40px !important;
+    box-sizing: border-box;
+  }
+  /* Logo */
+.login-content h6 {
+    text-align: center;
+    margin-bottom: 25px;
+  }
+  /* Sign In heading */
+.login-content h1,
+.login-content h2 {
+    text-align: center;
+    margin-bottom: 25px;
+}
+  /* Google and Gmail buttons */
+.social-btn {
+    width: 100% !important;
+    height: 55px;
+    margin-bottom: 15px;
+}
+  /* OR section */
+.or-section {
+    width: 100%;
+    margin: 25px 0;
+  }
+  /* Inputs */
+.login-content input {
+    width: 100% !important;
+    height: 50px;
+    box-sizing: border-box;
+    margin-bottom: 15px;
+  }
+  /* Sign in button */
+.login-content button {
+    width: 100%;
+    box-sizing: border-box;
+  }
 }
